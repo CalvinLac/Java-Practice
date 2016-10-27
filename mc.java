@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class mc {
     private int h = 30;
     public int a = 3;
@@ -26,7 +28,27 @@ public class mc {
     public void string () {
       int position = ayy.indexOf("i");
       System.out.println(position);
-      System.out.println(6 + 3 * 10 / 5);
+    }
+
+    public void cases () {
+      Scanner keyboard = new Scanner(System.in);
+      int answer;
+      System.out.println("Please enter in your age group");
+      answer = keyboard.nextInt();
+
+      switch (answer) {
+        case 10:
+          System.out.println("Wow you're pretty young");
+          break;
+        case 20:
+          System.out.println("Nice you're in the same age group as I am");
+          break;
+        case 30:
+          System.out.println("Wow you're a lot older than I am ");
+          break;
+        default:
+          System.out.println("Too old for me");
+      }
     }
 
   public static void main(String[] args) {
@@ -37,5 +59,6 @@ public class mc {
     hihi.time();
     hihi.test();
     hihi.string();
+    hihi.cases();
   }
 }
