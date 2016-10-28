@@ -25,11 +25,35 @@ public class mc2 {
     }
   }
 
+  public void test () {
+    double num = 10.34566;
+    int whole = (int)num;
+    num = num - whole;
+    while (num % 100 >= 99) {
+      num = num / 100;
+    }
+    num *= 100;
+    num %= 100;
+    System.out.println(num);
+    System.out.println(whole);
+    System.out.println(whole + "." + (int)num);
+  }
+
+  public void tester () {
+    Scanner hi = new Scanner(System.in);
+    String ll = "hihi";
+    ll = "dfkdfj";
+    System.out.println(ll);
+
+  }
+
   public static void main(String[] args) {
     mc2 hi = new mc2 ();
     hi.counterMethod();
     hi.do_while();
     hi.for_loop();
+    hi.test();
+    hi.tester();
 
 
   }
