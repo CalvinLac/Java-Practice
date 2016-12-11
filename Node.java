@@ -6,4 +6,12 @@ public class Node {
   public Node(int num) {
     data = num;
   }
+  public Node getNext ()
+    {
+        return next;
+    }
+  public String toString ()
+    {
+        return Integer.toString(data);
+    }
 }

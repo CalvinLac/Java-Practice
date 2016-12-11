@@ -13,14 +13,27 @@ public class List {
     if (head == null){
       head = newNode;
       end = newNode;
+      return;
     }
+  }
+
+  public String toString () {
+   String str = "";
+   for (Node curr = head; curr != null; curr = curr.getNext())
+   {
+       str += curr.toString() + ", ";
+   }
+   
+   return str;
   }
 
   public static void main(String[] args) {
     List numList = new List();
+    numList.add(4);
+    numList.add(4);
+    numList.add(6);
 
-    System.out.println(numList);
+    System.out.println(head.toString());
 
-    numList.insert
   }
 }
