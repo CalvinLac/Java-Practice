@@ -10,7 +10,6 @@ public class List {
 
   public void add (int num) {
     Node newNode = new Node(num);
-    Node prev = null;
 
     if (head == null){
       head = newNode;
@@ -18,27 +17,20 @@ public class List {
       return;
     }
 
+    Node prev = null;
     for (Node curr = head; curr != null; curr = curr.getNext()) {
-      System.out.println(curr.toString());
-      System.out.println(newNode.toString());
       if (curr.getData() >= newNode.getData()){
         if (curr == head)
           head = newNode;
         else
-          prev.setNext(curr);
+          prev.setNext(newNode);
         newNode.setNext(curr);
-        System.out.println("End");
         return;
       }
-      System.out.println(curr.toString());
-      System.out.println(newNode.toString());
       prev = curr;
-      System.out.println(prev.toString());
     }
-    System.out.println(newNode.toString());
     prev.setNext(newNode);
     end = newNode;
-    System.out.println("END");
   }
 
   public String toString () {
