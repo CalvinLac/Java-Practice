@@ -9,6 +9,9 @@ public class Switch {
     if(message.equals(override)) {
       age = 21;
     }
+    else{
+      System.out.println("You are not the Overlord");
+    }
   }
 
   public void switchStatements() {
