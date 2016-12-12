@@ -21,6 +21,8 @@ public class exceptionPractice {
       System.out.println("Please enter the number for the denominator");
       int denom = keyboard.nextInt();
 
+      System.out.println(numer/denom);
+
       if (denom == 0) 
         throw new Exception("Exception: zero denom");
 
