@@ -14,8 +14,7 @@ public class Alarm {
   }
 
   Alarm (int min, int hr) {
-    this(0,min,hr);
-    swag = 0;
+    this(0,min,hr,0);
   }
 
   Alarm (int sec, int min, int hr) {

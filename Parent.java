@@ -1,6 +1,6 @@
 public class Parent {
   protected String name;
-  private int age;
+  protected int age;
 
   public Parent() {
     name = "";
